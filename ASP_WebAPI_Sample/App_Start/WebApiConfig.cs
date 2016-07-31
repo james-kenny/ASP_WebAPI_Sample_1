@@ -25,6 +25,12 @@ namespace ASP_WebAPI_Sample
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "ApiV2",
+                routeTemplate: "serversncode/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
         }
     }
 }
